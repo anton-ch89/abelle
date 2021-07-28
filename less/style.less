@@ -1,0 +1,147 @@
+//color
+
+@mainYellow: #fbba17;
+@mainBlue: #1633b8;
+
+body {
+    margin: 0;
+    font-family: 'Sintony', sans-serif;
+}
+
+
+//navigation
+.logo {
+    max-width: 170px;
+}
+
+.main-header {
+    padding: 24px 0;
+}
+
+.menu-item {
+    font-family: 'Playfair Display', Serif;
+    font-size: 16px;
+    font-weight: bold;
+    list-style-type: none;
+    margin-top: 40px;
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #040404;
+        &:hover {
+            color: @mainYellow;
+            transition: 0.3s;
+        }
+    }
+}
+
+//main-title
+
+.title {
+    font-family: 'Playfair Display', Serif;
+    background: url(../img/mainTitle/oranges_main.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 450px;
+    color: @mainBlue;
+
+    &-main {
+        font-weight: 700;
+        margin-top: 150px;
+        font-size: 50px;
+    }
+
+    &-intro {
+        margin-left: 60px;
+        font-size: 50px;
+        margin-top: -20px;
+    }
+}
+.stripe {
+    background-color: #4169E1;
+    padding: 60px 0px;
+}
+
+
+//call section
+
+.call {
+    background-color: @mainYellow;
+    font-family: 'Playfair Display', Serif;
+    padding: 30px;
+
+    &-us {
+        background: url(../img/mainTitle/Phone_icon.png) no-repeat left center;
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 58px;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: #040404;
+            &:hover {
+                color: @mainBlue;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+//about section
+
+.about {
+    font-family: 'Playfair Display', serif;
+    &-us {
+        margin: 40px 0;
+
+        h2 {
+            font-weight: 700;
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    &-btn{
+        background-color: @mainYellow;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        border: none;
+        &:hover {
+            background-color: @mainBlue;
+        }
+    }
+    &-images{
+        text-align: center;
+        margin-top: 30px;
+    }
+    &-images-fruit {
+        margin: 15px;
+        max-width: 220px;
+    }
+}
+
+
+//media
+
+@media (max-width: 768px) {
+    .logo-wrapper {
+        text-align: center;
+        .logo{
+            min-width: 250px;
+        }
+    }
+    .menu-item {
+        font-size: 14px;
+    }
+    .call-us {
+        background: none;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 577px) {
+    .call-us {
+        padding-left: 30px;
+    }
+}
