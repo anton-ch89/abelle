@@ -3,14 +3,14 @@ body {
   font-family: 'Sintony', sans-serif;
 }
 .logo {
-  max-width: 170px;
+  max-width: 240px;
 }
 .main-header {
   padding: 24px 0;
 }
 .menu-item {
   font-family: 'Playfair Display', Serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   list-style-type: none;
   margin-top: 40px;
@@ -96,6 +96,42 @@ body {
   margin: 15px;
   max-width: 220px;
 }
+.production {
+  background: url(../img/production/orange_trees_1.jpg) no-repeat top center;
+  font-family: 'Playfair Display', serif;
+  padding-top: 50px;
+  background-size: contain;
+  margin-top: 40px;
+}
+.production-title {
+  font-size: 35px;
+  color: #FFF;
+  text-align: center;
+}
+.production-food {
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 130px;
+  max-width: 500px;
+  margin: 40px;
+  background: white;
+}
+.production-food-image {
+  margin-bottom: 40px;
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+}
+.production-food-title {
+  border-top: 1px solid #e1e1e1;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.production-food-desk {
+  font-size: 18px;
+  padding: 30px 50px;
+  border-bottom: 1px solid #e1e1e1;
+}
 @media (max-width: 768px) {
   .logo-wrapper {
     text-align: center;
@@ -114,5 +150,9 @@ body {
 @media (max-width: 577px) {
   .call-us {
     padding-left: 30px;
+    text-align: center;
+  }
+  .call-us span {
+    display: block;
   }
 }

@@ -26,9 +26,9 @@
                         <nav>
                             <ul class="menu d-flex justify-content-between">
                                 <li class="menu-item"><a href="#">main</a></li>
-                                <li class="menu-item"><a href="#">about us</a></li>
-                                <li class="menu-item"><a href="#">production</a></li>
-                                <li class="menu-item"><a href="#">contacts</a></li>
+                                <li class="menu-item"><a href="#about">about us</a></li>
+                                <li class="menu-item"><a href="#production">production</a></li>
+                                <li class="menu-item"><a href="#title">contacts</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -37,7 +37,7 @@
         </div>
     </header>
     <div class="stripe"></div>
-    <section class="title">
+    <section class="title" id="title">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-2">
@@ -47,16 +47,16 @@
                 </div>
             </div>
     </section>
-    <section class="call">
+    <section class="call" id="call">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-4 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12">
-                    <p class="call-us"><a href="tel: +33670558691">call us +33-670-558-691</a></p>
+                    <p class="call-us"><a href="tel: +33670558691">call us <span>+33-670-55-86-91</span></a></p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -81,6 +81,43 @@
             </div>
         </div>
     </section>
+    <section class="production" id="production">
+        <div class="container">
+            <div class="row">
+                <h2 class="production-title">Our Production</h2>
+                <div class="product-slider">
+                    <div class="col-lg-6">
+                        <div class="production-food">
+                            <img class="production-food-image" src="./img/production/oranges_1_1.jpg" alt="">
+                            <h3 class="production-food-title">Oranges</h3>
+                            <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi illum similique molestiae, sequi esse quaerat repellat amet consectetur, impedit, itaque porro harum rerum sint ut eos unde? Deleniti, molestias.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="production-food">
+                            <img class="production-food-image" src="./img/production/cupoftea1_1.jpg" alt="">
+                            <h3 class="production-food-title">Tea supplements</h3>
+                            <p class="production-food-desk">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cum corrupti voluptatem harum non autem blanditiis quod necessitatibus! Laborum quos, cupiditate blanditiis consequuntur iste quam ducimus ipsum eligendi modi? Reiciendis!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="production-food">
+                            <img class="production-food-image" src="./img/production/pineapple_1_1.jpg" alt="">
+                            <h3 class="production-food-title">Pineapples</h3>
+                            <p class="production-food-desk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ad a quia facilis dolores est quaerat ut voluptates corporis, blanditiis, tenetur molestias, velit recusandae doloremque esse non totam assumenda minus!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="production-food">
+                            <img class="production-food-image" src="./img/production/Sweets_1_1.jpg" alt="">
+                            <h3 class="production-food-title">Sweets</h3>
+                            <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo ut, vero asperiores vel ullam consequatur nobis cupiditate reiciendis quia molestias? Sunt vitae ipsa quod officiis nam assumenda, excepturi est.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/script.js"></script>
@@ -88,4 +125,30 @@
 <script>
     new WOW().init(); 
 </script>
+<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.product-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+            {
+  breakpoint: 992,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
+},
+
+]
+    });
+  });
+  </script>
+
 </html>
