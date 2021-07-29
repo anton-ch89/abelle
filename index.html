@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./less/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Dplay:400,700|Sintony:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
     <title>Abelle</title>
 </head>
 <body>
@@ -15,14 +17,14 @@
         <div class="main-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-xs-6 offset-xs-3">
+                    <div class="col-lg-3 offset-lg-0 col-md-12 offset-md-0 col-xs-6 offset-xs-3">
                         <div class="logo-wrapper">
                             <a href="#main">
                                 <img class="logo" src="./img/header/logo png half.png" alt="Logo">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-7 col-xs-12">
+                    <div class="col-lg-9 col-md-12 col-xs-12">
                         <nav>
                             <ul class="menu d-flex justify-content-between">
                                 <li class="menu-item"><a href="#">main</a></li>
@@ -51,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-4 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12">
-                    <p class="call-us"><a href="tel: +33670558691">call us <span>+33-670-55-86-91</span></a></p>
+                    <p class="call-us"><a href="tel:+33670558691">call us <span>+33-670-55-86-91</span></a></p>
                 </div>
             </div>
         </div>
@@ -68,14 +70,14 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="about-images">
-                        <img class="about-images-fruit animate__animated animate__backInUp wow" src="./img/about/apple_garden_2.png" alt="Apple">
-                        <img class="about-images-fruit animate__animated animate__backInUp wow" src="./img/about/hurma.png" alt="Hurma">
+                        <img class="about-images-fruit apple-img animate__animated animate__backInUp wow" src="./img/about/apple_garden_2.png" alt="Apple">
+                        <img class="about-images-fruit hurma-img animate__animated animate__backInUp wow" src="./img/about/hurma.png" alt="Hurma">
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="about-images about-images-right ">
-                        <img class="about-images-fruit animate__animated animate__backInUp wow" src="./img/about/pear.png" alt="Pear">
-                        <img class="about-images-fruit animate__animated animate__backInUp wow" src="./img/about/orange-wn.png" alt="Orange">
+                        <img class="about-images-fruit pear-img animate__animated animate__backInUp wow" src="./img/about/pear.png" alt="Pear">
+                        <img class="about-images-fruit orange-img animate__animated animate__backInUp wow" src="./img/about/orange-wn.png" alt="Orange">
                     </div>
                 </div>
             </div>
@@ -86,38 +88,97 @@
             <div class="row">
                 <h2 class="production-title">Our Production</h2>
                 <div class="product-slider">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-xs-12">
                         <div class="production-food">
                             <img class="production-food-image" src="./img/production/oranges_1_1.jpg" alt="">
-                            <h3 class="production-food-title">Oranges</h3>
-                            <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi illum similique molestiae, sequi esse quaerat repellat amet consectetur, impedit, itaque porro harum rerum sint ut eos unde? Deleniti, molestias.</p>
+                            <div class="production-food-wrapper">
+                                <h3 class="production-food-title">Oranges</h3>
+                                <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Beatae explicabo ut, vero asperiores vel ullam consequatur nobis cupiditate reiciendis
+                                    quia molestias? Sunt vitae ipsa quod officiis nam assumenda, excepturi est.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-xs-12">
                         <div class="production-food">
                             <img class="production-food-image" src="./img/production/cupoftea1_1.jpg" alt="">
-                            <h3 class="production-food-title">Tea supplements</h3>
-                            <p class="production-food-desk">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cum corrupti voluptatem harum non autem blanditiis quod necessitatibus! Laborum quos, cupiditate blanditiis consequuntur iste quam ducimus ipsum eligendi modi? Reiciendis!</p>
+                            <div class="production-food-wrapper">
+                                <h3 class="production-food-title">Tea supplements</h3>
+                                <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Beatae explicabo ut, vero asperiores vel ullam consequatur nobis cupiditate reiciendis
+                                    quia molestias? Sunt vitae ipsa quod officiis nam assumenda, excepturi est.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-xs-12">
                         <div class="production-food">
                             <img class="production-food-image" src="./img/production/pineapple_1_1.jpg" alt="">
-                            <h3 class="production-food-title">Pineapples</h3>
-                            <p class="production-food-desk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ad a quia facilis dolores est quaerat ut voluptates corporis, blanditiis, tenetur molestias, velit recusandae doloremque esse non totam assumenda minus!</p>
+                            <div class="production-food-wrapper">
+                                <h3 class="production-food-title">Pineapples</h3>
+                                <p class="production-food-desk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro esse ab delectus voluptatibus consectetur minus aut magni corporis provident facilis eligendi rem exercitationem quas quod, qui perferendis veniam! Quas.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-xs-12">
                         <div class="production-food">
                             <img class="production-food-image" src="./img/production/Sweets_1_1.jpg" alt="">
-                            <h3 class="production-food-title">Sweets</h3>
-                            <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo ut, vero asperiores vel ullam consequatur nobis cupiditate reiciendis quia molestias? Sunt vitae ipsa quod officiis nam assumenda, excepturi est.</p>
+                            <div class="production-food-wrapper">
+                                <h3 class="production-food-title">Sweets</h3>
+                                <p class="production-food-desk">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Beatae explicabo ut, vero asperiores vel ullam consequatur nobis cupiditate reiciendis
+                                    quia molestias? Sunt vitae ipsa quod officiis nam assumenda, excepturi est.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="footer-socials  d-flex justify-content-center">
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-item_fb" href="https://www.facebook.com/Abelle-103526027760432/"></a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-item_inst" href="https://www.instagram.com/abellebailleul/?hl=ru"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="footer-line"></div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-credits">
+                        2021 ©ACH
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="footer-line"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup-dialog">
+            <div class="popup-content">
+                <button class="popup-close">&times;</button>
+            <div class="main-form popup-form">
+                <div class="production-food">
+                    <img class="production-food-image" src="./img/production/pineapple_1_1.jpg" alt="">
+                    <div class="production-food-wrapper">
+                        <h3 class="production-food-title">Pineapples</h3>
+                        <p class="production-food-desk">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro esse ab delectus voluptatibus consectetur minus aut magni corporis provident facilis eligendi rem exercitationem quas quod, qui perferendis veniam! Quas.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/script.js"></script>
@@ -139,10 +200,11 @@ $(document).ready(function(){
         dots: true,
         responsive: [
             {
-  breakpoint: 992,
+  breakpoint: 768,
   settings: {
     slidesToShow: 1,
     slidesToScroll: 1,
+    dots: false,
   }
 },
 
