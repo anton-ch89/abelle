@@ -102,12 +102,13 @@ body {
 .orange-img {
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 .apple-img:hover,
 .hurma-img:hover,
 .pear-img:hover,
 .orange-img:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 20px rgba(251, 186, 23, 0.5);
 }
 .production {
   background: url(../img/production/orange_trees_1.jpg) no-repeat top center;
@@ -189,6 +190,10 @@ body {
   text-align: center;
   margin-top: 27px;
 }
+.popup-apple,
+.popup-hurma,
+.popup-pear,
+.popup-orange,
 .popup {
   display: none;
   position: fixed;
@@ -201,6 +206,10 @@ body {
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.popup-apple-content,
+.popup-hurma-content,
+.popup-pear-content,
+.popup-orange-content,
 .popup-content {
   position: fixed;
   text-align: center;
@@ -210,6 +219,10 @@ body {
   transform: translateX(-50%);
   padding: 0;
 }
+.popup-apple-close,
+.popup-hurma-close,
+.popup-pear-close,
+.popup-orange-close,
 .popup-close {
   position: absolute;
   top: -1.5rem;
