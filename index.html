@@ -134,6 +134,29 @@
             </div>
         </div>
     </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="feedback-img">
+                        <img src="./img/contact/pastila_2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feedback-form">
+                        <h4>Feedback</h4>
+                        <form action="#">
+                            <label class="feedback-label" for="visitor-name">Input your name</label>
+                            <input class="feedback-input" type="text" name="visitor-name" id="" >
+                            <label class="feedback-label" for="visitor-phone">Input your phone</label>
+                            <input class="feedback-input" type="tel" name="visitor-phone" id="" >
+                            <button class="btn btn-lg  form-btn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -246,6 +269,8 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
+        prevArrow: '<button class="prev arrow"></button>',
+        nextArrow: '<button class="next arrow"></button>',
         responsive: [
             {
   breakpoint: 768,
