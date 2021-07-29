@@ -162,7 +162,8 @@ body {
   margin-bottom: 30px;
 }
 .feedback-img {
-  margin: 0 30px;
+  max-width: 600px;
+  margin: 0px 30px 30px 30px;
 }
 .feedback-img img {
   max-width: 600px;
