@@ -8,10 +8,6 @@ pearImg = document.querySelector('.pear-img'),
 orangeImg = document.querySelector('.orange-img');
 
 
-popupClose.addEventListener('click', e=>{
-    e.preventDefault();
-    popup.style.display = 'none';
-});
 document.body.addEventListener('click', (e)=>{
     let target = e.target;
     if (target.matches('.apple-img')){
@@ -25,5 +21,8 @@ document.body.addEventListener('click', (e)=>{
     }
     if (target.matches('.orange-img')){
         popup.style.display = 'block';
+    }
+    if (target.matches('.popup') || target.matches('.popup-close')){
+        popup.style.display = 'none';
     }
 });
