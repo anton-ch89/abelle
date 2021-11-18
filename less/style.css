@@ -75,6 +75,13 @@ body {
   padding: 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+.about-us-text {
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
 .about-us h2 {
   font-weight: 700;
   font-size: 35px;
@@ -89,10 +96,10 @@ body {
   background-color: #fbba17;
   border: none;
   width: 40%;
-  color: #fff;
-  max-height: 60px;
   text-transform: uppercase;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #fff;
 }
 .about-images {
   text-align: center;
@@ -115,6 +122,7 @@ body {
 .pear-img:hover,
 .orange-img:hover {
   box-shadow: 0 5px 20px rgba(251, 186, 23, 0.5);
+  transition: 0.5s;
 }
 .production {
   background: url(../img/production/orange_trees_1.jpg) no-repeat top center;
@@ -327,6 +335,11 @@ body {
   right: 0;
   background: url(../img/arrow-right.svg) center no-repeat;
   background-size: 70%;
+}
+.about-page-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin: 20px 0;
 }
 @media (max-width: 992px) {
   .production-food {
